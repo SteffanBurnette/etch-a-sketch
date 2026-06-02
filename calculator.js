@@ -30,7 +30,7 @@ buttons.forEach(button => {
     button.addEventListener("click", () => {
         console.log(button.textContent);
         console.log("clicked");
-        if(button.textContent !== "Clear" && button.textContent !== "="){
+        if(button.textContent !== "Clear" && button.textContent !== "=" && button.textContent !== "Backspace"){
             if(calculation.length === 0 && (button.textContent === "+" || button.textContent === "*" || button.textContent === "/")){
                 alert(`Cannot put ${button.textContent} at the start.`)
                 return;
@@ -62,6 +62,9 @@ buttons.forEach(button => {
             console.log(calculateNumber(calculation));
             
 
+        }else if(button.textContent === "Backspace" && calculation.length > 0){
+            calculation.pop();
+            currentCalcValue.textContent = calculation.join("");
         }
 
     });
