@@ -1,0 +1,43 @@
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+    border-color:black;
+    border-width: thick;
+    border: solid;
+    border-radius: 20px;
+    height: 600px;
+    width: 100%;
+}
+
+.row{
+    justify-content: space-evenly;
+}
+
+.number{
+    width:200px;
+    height: 100px;
+    font-size:larger;
+    margin: 3px;
+}
+
+.operation{
+    width: 200px;
+    height: 100px;
+    font-size: larger;
+    margin: 3px;
+}
+
+#finalValue{
+    border: solid;
+    width: 100vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:xx-large;
+    background-color: rgb(0 0 0 /20%);
+}
