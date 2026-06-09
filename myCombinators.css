@@ -1,0 +1,9 @@
+/* The divs with the class "child" will be selected: */
+main > div {
+    /* css goes here*/
+}
+
+/* The divs with the class "grand-child" will get selected by this */
+main > div > div {
+    /* More cool css*/
+}
