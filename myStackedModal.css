@@ -1,0 +1,10 @@
+#additional_info {
+    display: flex;
+    flex-direction: row;
+}
+
+.form_space {
+    margin-left: 10px;
+    margin-right: 10px;
+     
+}
